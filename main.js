@@ -16,8 +16,8 @@ windowManager.templates.set('dev', {
 
     app.on('ready', function(){
     windowManager.init();
-    windowManager.open('scoreboard', false, '/scoreboard/scoreboard.html', 'dev');
-    windowManager.open('controlpanel', false, '/cp/controlpanel.html', 'dev');
+    windowManager.open('scoreboard', false, '/scoreboard/index.html', 'dev');
+    windowManager.open('controlpanel', false, '/controlpanel/index.html', 'dev');
   })
 
   app.on('window-all-closed', () => {
