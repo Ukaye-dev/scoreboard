@@ -4,7 +4,9 @@
   "description": "a simple scoreboard for a simple person",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,8 @@
   },
   "homepage": "https://github.com/Ukaye-dev/scoreboard#readme",
   "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.66",
     "electron": "^21.0.1"
-  }
+  },
+  "dependencies": {}
 }
