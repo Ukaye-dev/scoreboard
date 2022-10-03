@@ -1,20 +1,22 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow } = require('electron', 'electron-window-manager')
 const path = require('path')
+const windowManager = require('electron-window-manager');
 
-const createWindow = () => {
-    const win = new BrowserWindow({
-      width: 800,
-      height: 600,
-      webPreferences: {
-        preload: path.join(__dirname, 'preload.js')
-      }
-    })
+windowManager.templates.set('dev', {
+  'width': 800,
+  'height': 600,
+  'resizeable': true,
+  'layout': 'classy',
+  webPreferences: {
+    preload: path.join(__dirname, 'preload.js')
+    },
+    });
   
-    win.loadFile('index.html')
-  }
 
   app.whenReady().then(() => {
-    createWindow()
+    windowManager.init();
+    windowManager.open('dev', 'Scoreboard', '/scoreboard.html');
+
     
     app.on('activate', () => {
       if (BrowserWindow.getAllWindows().length === 0) createWindow()

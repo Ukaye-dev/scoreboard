@@ -25,5 +25,7 @@
     "@electron-forge/cli": "^6.0.0-beta.66",
     "electron": "^21.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "electron-window-manager": "^1.0.6"
+  }
 }

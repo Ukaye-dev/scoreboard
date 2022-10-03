@@ -1,0 +1,34 @@
+{
+    "bgcolour" :"",
+    "seccolour" :"",
+    "textcolour" :"",
+
+    "boardtitle" :"",
+    "setnumber" :"",
+
+
+
+    "homename" :"",
+    "homelogo" :"",
+    "homepoints" :"",
+    "homesetswon" :"",
+
+
+    "awayname" :"",
+    "awaylogo" :"",
+    "awaypoints" :"",
+    "awaysetswon" :"",
+
+    "setonehome" :"",
+    "setoneaway" :"",
+
+    "settwohome" :"",
+    "settwoaway" :"",
+
+    "setthreehome" :"",
+    "setthreeaway" :"",
+
+    "setfourhome" :"",
+    "setfouraway" :""
+
+}
