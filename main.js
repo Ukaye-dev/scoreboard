@@ -5,22 +5,19 @@ const windowManager = require('electron-window-manager');
 windowManager.templates.set('dev', {
   'width': 800,
   'height': 600,
-  'resizeable': true,
-  'layout': 'classy',
+  'menu': null,
+  //make the window resizeable
+  'resizable': true,
   webPreferences: {
     preload: path.join(__dirname, 'preload.js')
     },
     });
   
 
-  app.whenReady().then(() => {
+    app.on('ready', function(){
     windowManager.init();
-    windowManager.open('dev', 'Scoreboard', '/scoreboard.html');
-
-    
-    app.on('activate', () => {
-      if (BrowserWindow.getAllWindows().length === 0) createWindow()
-    })
+    windowManager.open(false, false, '/scoreboard.html', 'dev');
+    windowManager.open(false, false, '/controlpanel.html', 'dev');
   })
 
   app.on('window-all-closed', () => {
