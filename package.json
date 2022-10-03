@@ -1,0 +1,25 @@
+{
+  "name": "scoreboard",
+  "version": "1.0.0",
+  "description": "a simple scoreboard for a simple person",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ukaye-dev/scoreboard.git"
+  },
+  "keywords": [
+    "scoreboard"
+  ],
+  "author": "Ukaye",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Ukaye-dev/scoreboard/issues"
+  },
+  "homepage": "https://github.com/Ukaye-dev/scoreboard#readme",
+  "devDependencies": {
+    "electron": "^21.0.1"
+  }
+}
